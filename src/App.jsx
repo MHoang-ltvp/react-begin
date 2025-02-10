@@ -3,9 +3,16 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
+const App = () => {
   const [count, setCount] = useState(0)
+  /**
+   * Logs a greeting message to the console.
+   */
+  const myFunction = () => {
+    console.log('hello'); // Output 'hello' to the console
+  }
 
+  myFunction();
   return (
     <>
       <div> // hot reloading
