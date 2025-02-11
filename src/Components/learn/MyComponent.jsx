@@ -1,9 +1,15 @@
+//JSX
+//Fragment
+
+import './style.css'
 const MyComponent = () => {
     return (
-        <div>
-            <h1>Hello World</h1>
-        </div>
-
+        <>
+            <div>Hello World</div>
+            <div className="child"
+                style={{ border: '1px solid red', padding: '10px' }}
+            >React</div>
+        </>
     )
 }
 
