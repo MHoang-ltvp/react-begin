@@ -3,16 +3,16 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+const MyComponent = () => {
+  return (
+    <div>
+      <h1>Hello World</h1>
+    </div>
+
+  )
+}
 const App = () => {
   const [count, setCount] = useState(0)
-  /**
-   * Logs a greeting message to the console.
-   */
-  const myFunction = () => {
-    console.log('hello'); // Output 'hello' to the console
-  }
-
-  myFunction();
   return (
     <>
       <div> // hot reloading
@@ -24,6 +24,7 @@ const App = () => {
         </a>
       </div>ll
       <h1>Hello World 2</h1>
+      <MyComponent />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -40,3 +41,4 @@ const App = () => {
 }
 
 export default App
+
