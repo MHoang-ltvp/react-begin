@@ -8,16 +8,24 @@ const TodoData = (props) => {
     //         country: 'Vietnam'
     //     }
     // }
-    const { name, data, age } = props;
+    const { todoList } = props;
     console.log("Check props:", props)
     return (
         <div className="todo-data">
-            <div>My name is {age}</div>
-            <div>Learning React</div>
-            <div>Watching React</div>
-            <div>
+            {todoList.map((item) => {
+                console.log("Check item:", item)
+                return (
+                    <div>
+                        <div className="todo-item">
+                            <div>{item.name}</div>
+                            <button>Delete</button>
+                        </div>
+                    </div>
+                )
+            })}
+            {/* <div>
                 {JSON.stringify(props.todoList)}
-            </div>
+            </div> */}
         </div>
     )
 }
