@@ -3,8 +3,8 @@ import { useState } from "react"
 const TodoNew = (props) => {
     const [valueInput, setValue] = useState('Eric')
     const { addnewTodo } = props
-    const handleClick = () => {
-        alert("Save")
+    const handleClick = (name) => {
+        addnewTodo(valueInput)
     }
     const handleChange = (name) => {
         setValue(name)
